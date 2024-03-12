@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các thẻ cơ bản trong HTML5</title>
+</head>
+<body>
+    <h1>Các thẻ cơ bản trong HTML5</h1>
+    <hr>
+    <h2>Thẻ chỉ số trên (sup) / dưới (sub)</h2>
+    <p>
+        Phương trình: A.X<sup>2</sup> + B.X + C = 0
+    </p>
+    <p>
+        Phương trình hóa học: <br/>
+        2H<sub>2</sub> + O<sub>2</sub> = 2H<sub>2</sub>O
+    </p>
+    <h2>Thẻ hiển thị hình ảnh</h2>
+    <pre>
+        Sử dụng thẻ img: 
+        * Thuộc tính: src ; alt 
+            - src: [url] - đường dẫn đến file tài nguyên
+                + url: đường dẫn tuyệt đối 
+                    [giao thức]://domain/[path]
+                    ví dụ:
+                    https://devmaster.edu.vn/images/logo.png 
+                + url: đường dẫn tương đối
+                    ++ vào thư mục: folder/ 
+                    ++ ra một thư  mục: ../ 
+            - alt: text 
+    </pre>
+    <p>
+        [url]: đường dẫn tuyệt đối <br>
+        <img src="https://devmaster.edu.vn/images/logo.png" 
+            alt="Devmaster Academy">
+    </p>
+    <p>
+        [url]: tương đối <br>
+        <img src="images/java_web.jpg" alt="java_web">
+        <br>
+        <img src="../java_web.jpg" alt="java_web">
+    </p>
+</body>
+</html>
