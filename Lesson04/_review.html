@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form và các phần tử trên form </title>
+</head>
+<body>
+    <h1>Review Form và các phần tử trên form </h1>
+    <hr>
+    <pre>
+        * form: action, method, name, id,  enctype
+            ** input: type, name, id, plaeholder, required, checked , readonly 
+                - type:
+                    + text: mặc định 
+                    + password
+                    + email
+                    + tel
+                    + date / datetime-local 
+                    + number
+                    + range
+                    + color
+                    + url 
+                    + search
+                    + checkbox
+                    + radio
+                    + file 
+                    + submit
+                    + reset
+                    + button
+            ** select: name, id, 
+                - optgroup: label 
+                    ++ option: value / text 
+            ** <textarea name="" id="" cols="30" rows="10"></textarea>
+            ** <button>Nút bấm</button>
+    </pre>
+
+    <form action="">
+        <h2>Login Information</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <img src="https://devmaster.edu.vn/images/logo.png" alt="devmaster">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tài khoản:</th>
+                    <td>
+                        <input type="email" name="taiKhoan" id="taiKhoan" required placeholder="Nhập tài khoản">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mật khẩu:</th>
+                    <td>
+                        <input type="password" name="matKhau" id="matKhau" placeholder="Mật khẩu" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="checkbox" name="ghiNho" id="ghiNho" checked>
+                        <label for="ghiNho">Ghi nhớ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Đăng nhập">
+                        <input type="reset" value="Làm lại">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</body>
+</html>

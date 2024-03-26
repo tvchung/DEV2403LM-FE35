@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng css trong trang html</title>
+    <link rel="stylesheet" href="css/css1.css">
+    <style>
+        h2{
+            background: cyan;
+        }
+        section{
+            border: 1px solid red;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Sử dụng css trong trang html</h1>
+        <pre>
+            -  có 2 cách:
+                + style inline: thuộc tính style của tag html 
+                    chỉ áp dụng cho phần tử hiện tại 
+                + tag style: áp dụng cho toàn bộ trang html 
+                    ++ nên viết ở phần head của trang html 
+                + file .css: (External style )
+                    ++ viết 1 lần và áp dụng cho nhiều trang html 
+                    ++ khi nhúng file css, cũng nên đặt ở phần head 
+        </pre>
+    </section>
+    <section>
+        <h2 style="color:blue">Style inline </h2>
+    </section>
+    <section>
+        <h2>Sử dụng tag style </h2>
+        <pre>
+            xem trên phần head
+        </pre>
+    </section>
+    <section>
+        <h2>External style - file .css</h2>
+        <pre>
+            xem file css1.css
+        </pre>
+    </section>
+</body>
+</html>

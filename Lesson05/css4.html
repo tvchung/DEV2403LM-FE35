@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc tính css </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            border:1px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 0.5rem 
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        #zone2 {
+            display: flex;
+            justify-content: center;
+        }
+        #zone2 > div{
+            position: relative;
+            border-radius: 10px;
+        }
+        #zone2 > div > span {
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            display: block;
+            right: 0;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 50%;
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thuộc tính css</h1>
+    </header>
+    <section id="zone1">
+        <!-- <pre>
+            - margin: khoảng cách giữa các phần tử 
+                + margin: top right button left => margin:1rem 2rem .5rem .5rem;
+                + margin: [top/button] [left/right] => margin: 1rem 2rem; 
+                + margin-top: 1rem;
+                ...
+            - padding: khoảng cách giữa nội dung và lề của phẩn tử 
+            - border: đường kẻ viền 
+                + border: 1px solid red 
+            - border-radius: bo góc
+            - width:
+            - height:
+            - position: absolute / relative / fixed / ...         
+            - top / left / right/ button:
+            - display: flex / block / ...  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+        * màu:
+            - Màu nền: background
+            - màu chữ: color
+        * font: 
+            - style 
+            - size
+            - color 
+            ... 
+        * canh lề nội dung:
+            text-align: left / center / right / justify
+        ...
+
+        </pre> -->
+    </section>
+    <section id="zone2">
+        <!-- <h2>DEMO</h2> -->
+        <div class="bg-red">
+            <span>50%</span>
+        </div>
+        <div class="bg-blue"></div>
+        <div class="bg-red"></div>
+        <div class="bg-blue"></div>
+    </section>
+</body>
+</html>

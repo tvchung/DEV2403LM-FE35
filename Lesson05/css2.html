@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác css với html</title>
+</head>
+<body>
+    <header>
+            <h1>Cú pháp tương tác css với html</h1>
+    </header>
+    <section>
+        <h2>Css tương tác với tên thẻ HTML </h2>
+        <p>Thẻ đoạn văn 1</p>
+        <p>Thẻ đoạn văn 2</p>
+        <p>Thẻ đoạn văn 3</p>
+        <style>
+            h2{
+                color: blue;
+            }
+            p{
+                background: cyan;
+            }
+        </style>
+    </section>
+    <section>
+        <h2>Css tương tác với thuộc tính id của thẻ HTML</h2>
+        <div id="div1">
+            <p>Khối 1</p>
+        </div>
+        <div id="div2">
+            <p>Khối 2</p>
+        </div>
+        <style>
+            /* tương tác tác thông qua thuộc tính id  */
+            #div1{
+                margin:1rem;
+                padding: 1rem;
+                border: 1px solid red;
+            }
+            #div2{
+                border: 2px dotted violet;
+                padding-left: 1rem;
+            }
+        </style>
+    </section>
+
+    <section>
+        <h2>Css tương tác thông qua thuộc tính class của tag html</h2>
+        <div class="div">
+            <p class="noi-dung">Nội dung khối div </p>
+        </div>
+        <div class="div">
+            <p class="noi-dung">Nội dung khối div </p>
+        </div>
+        <div class="div">
+            <p class="noi-dung">Nội dung khối div </p>
+        </div>
+
+        <style>
+            /* Css tương tác thông qua thuộc tính class của tag html */
+            .div{
+                border:2px dashed green;
+                width: 10rem;
+                height: 10rem;
+                margin-top: .5rem;
+            }
+            .noi-dung{
+                background-color: blueviolet;
+                color: yellow;
+                padding: .5rem 1rem;
+            }
+        </style>
+    </section>
+
+    <section>
+        <h2>Tương tác thông qua giá trị của thuộc </h2>
+        <div>
+            <p data-value="A1">Đoạn 1</p>
+            <p data-value="A2">Đoạn 2</p>
+            <p data-value="A1">Đoạn 3</p>
+            <p data-value="A2">Đoạn 4</p>
+        </div>
+        <div>
+            <form action="">
+                <input type="text" name="txt" id="txt1">
+                <input type="text" name="txt" id="txt1">
+                <input type="text" name="txt" id="txt1">
+                <input type="button" name="txt" id="txt1">
+            </form>
+        </div>
+        <style>
+            /* Tương tác thông qua giá trị của thuộc  */
+            p[data-value="A1"]{
+                font-size: 1.5rem;
+            }
+            p[data-value="A2"]{
+                font-size: .7rem;
+                padding: 1rem;
+            }
+            input[type="text"]{
+                border: 1px solid #ccc;
+                width: 200px;
+                margin: .5rem 1rem;
+                padding: .5rem;
+            }
+        </style>
+    </section>
+
+</body>
+</html>

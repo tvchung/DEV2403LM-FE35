@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form và các phần tử trên form</title>
+</head>
+<body>
+    <h1>Form và các phần tử trên form</h1>
+    <hr>
+    <form id="frm" name="frm" action="" method="get" enctype="multipart/form-data">
+        <h2>Các thành phần trên form</h2>
+        <p>
+            <input type="text" name="txt" placeholder="gợi ý"  required> ô nhập text 
+        </p>
+        <p>
+            <input type="password" name="pass" id="pass" placeholder="nhập mật khẩu"> nhập kiểu mật khẩu
+        </p>
+        <p>
+            <input type="email" name="email" id="email"> nhập kiểu email 
+        </p>
+        <p>
+            <input type="tel" name="phone" id="phone"> nhập kiểu mẫu điện thoại 
+        </p>
+        <p>
+            <input type="number" name="numb" id="numb" value="30"> nhập giá trị số 
+        </p>
+        <p>
+            <input type="range" name="so" id="so" min="0" max="100" value="20"> số kiểu thanh trượt
+        </p>
+        <p>
+            Chọn nhiều: 
+            <input type="checkbox" name="chk" id="chk1" checked> 
+            <label for="chk1">chk1</label>
+            <input type="checkbox" name="chk" id="chk2"> 
+            <label for="chk2">chk2</label> 
+            <input type="checkbox" name="chk" id="chk3"> 
+            <label for="chk3">chk3</label>
+        </p>
+
+        <p>
+            Chọn 1 trong nhiều khả năng lựa chọn: <br>
+            Giới tính: 
+            <input type="radio" name="gt" id="gtNam" checked> <label for="gtNam">Nam</label>
+            <input type="radio" name="gt" id="gtNu"> <label for="gtNu">Nữ</label>
+            <input type="radio" name="gt" id="gtKhac"> <label for="gtKhac">Khác</label>
+            <br>
+            Giờ học:
+            <input type="radio" name="gh" id="sang"> <label for="sang">Sáng</label>
+            <input type="radio" name="gh" id="chieu"> <label for="chieu">Chiều</label>
+            <input type="radio" name="gh" id="toi"> <label for="toi">Tối</label>
+        </p>
+        <p>
+            <input type="file" name="chon" id="chon"> chọn file
+        </p>
+        <p>
+            <input type="image" src="https://devmaster.edu.vn/images/logo.png" 
+                alt="Devmaster" width="50px">
+        </p>
+        <p>
+            <input type="date" name="ngay" id="ngay"> chọn ngày
+            <br>
+            <input type="datetime" name="ngayGio" id="ngayGio">
+            <br>
+            <input type="datetime-local" name="dateLocal" id="dateLocal">
+            <br>
+            <input type="month" name="thang" id="thang"> chọn tháng
+            <br>
+            <input type="week" name="tuan" id="tuan"> chọn tuần
+        </p>
+        <p>
+            <input type="color" name="chonMau" id="chonMau"> Chọn màu
+        </p>
+
+        <p>
+            <input type="submit" value="Gửi đi">
+            <input type="reset" value="Làm lại">
+        </p>
+    </form>
+</body>
+</html>

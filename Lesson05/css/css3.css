@@ -1,0 +1,87 @@
+/* Bộ chọn * */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Bộ chọn phần từ */
+body{
+    background-color: yellow;
+}
+h1{
+    color: blue;
+    border-bottom: 3px solid green;
+}
+/* bộ chọn tag01, tag02 - có thể là phần tử, class, id, thuộc tính*/
+h1, h2, h3, h4, h5, h6 {
+    color: blue;
+    padding: .5rem;
+    text-align: center;
+}
+header, footer, section {
+    border:3px solid black;
+    margin: .5rem;
+}
+/* bộ chọn tag01 tag02  */
+#zone1 .item {
+    padding: 1rem;
+}
+/* Bộ chọn tag01 > tag02  */
+#zone1 > .item{
+    color:blue;
+    background-color: #ccc;
+    margin: 1rem;
+}
+
+/* Bộ chọn tag01 + tag02  */
+.row + .item{
+    font-size: 1.5rem;
+    background-color: red !important;
+}
+/* Bộ chọn tag01 ~ tag02  */
+.row ~ .item {
+    border:3px dotted black;
+    margin: 0 1rem;
+}
+/* Bộ chọn ngữ cảnh */
+/*
+:hover 
+:before 
+:after 
+:first-child /  :last-child
+:nth-child(n) / :nth-child(2n) / :nth-child(2n+1)
+*/
+.item:hover {
+    font-size: 3rem;
+    cursor: pointer;
+}
+.item::before{
+    content: "";
+    /* border:2px solid #000; */
+    background-color: #000;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    /* top: 100%; */
+}
+.row .item:first-child {
+    background-color: aqua;
+}
+
+.item:last-child{
+    background: orchid;
+}
+
+#zone3 ul li:nth-child(n){
+    color: red;
+    font-size: 1.5rem;
+}
+#zone3 ul li:nth-child(2n){
+   background: violet;
+}
+#zone3 ul li:nth-child(2n+1){
+    background: blue;
+}
+#zone3 ul li:nth-child(4){
+    border: 4px solid olive;
+    margin:1rem
+}

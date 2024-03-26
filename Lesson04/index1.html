@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ khối div</title>
+    <style>
+        form{
+            border: 1px solid #ccc;
+            background-color: #ccc;
+            margin: 2rem 25%;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-login">
+        <form action="">
+            <h1>Đăng nhập hệ thống</h1>
+            <div class="form-group">
+                <label for="taiKhoan">Tài khoản</label>
+                <div>
+                    <input type="text" name="taiKhoan" id="taiKhoan" 
+                        placeholder="Nhập tài khoản" required>
+                    <span id="errTK" class="error">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="matKhau">Mật khẩu</label>
+                <div>
+                    <input type="password" name="matKhau" id="matKhau"
+                        placeholder="Nhập mật khẩu... " required>
+                    <span id="errMK" class="error">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input type="checkbox" name="chkGhiNho" id="chkGhiNho" checked>
+                    <label for="chkGhiNho"> Ghi Nhớ</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                <input type="reset" value="Làm lại" class="btn btn-secondary">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

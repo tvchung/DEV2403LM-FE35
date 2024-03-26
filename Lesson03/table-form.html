@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <h1>Kết hợp table - form</h1>
+    <hr>
+    <form action="" method="post">
+        <table border="1" width="50%" align="center" cellpadding="5"> 
+            <tbody>
+                <tr>
+                    <td align="center" colspan="2">
+                        <img src="https://devmaster.edu.vn/images/logo.png" 
+                            alt="Devmaster">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tài khoản:
+                    </td>
+                    <td>
+                        <input type="text" name="taiKhoan" id="taiKhoan" required>
+                        <span>(*)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                        <input type="password" name="matKhau" id="matKhau" required>
+                        <span>(*)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="ghiNho" id="ghiNho">
+                        <label for="ghiNho">Ghi nhớ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng nhập">
+                        <input type="reset" value="Làm lại">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> 
+                        <span><i>(*) là bắt buộc nhập</i></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

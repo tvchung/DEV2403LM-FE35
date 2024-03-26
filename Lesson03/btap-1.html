@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký học</title>
+    <style>
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: .5rem;
+        }
+        input[type="submit"]{
+            width: 100px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="">
+        <table border="0" width="80%" align="center" cellspacing="10">
+            <tbody>
+                <tr>
+                    <td rowspan="7" style="vertical-align: top; width: 50%;">
+                        <img src="https://devmaster.edu.vn/images/welcome.jpeg" 
+                            alt="" width="100%">
+                            <br>
+                        <p>
+                            Chào mừng bạn đến với gia đình <strong>DEVMASTER</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p style="border-bottom: 1px solid #ccc;">
+                            Liên hệ hotline 
+                            <a href="tel:0978611889">0978.611.889</a>
+                            hoặc nhập thông tin của bạn vào đây, DEVMASTER sẽ liên hệ với bạn sớm nhất có thể
+                        </p> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hoTen">Họ tên <span>(*)</span></label>
+                        <br>
+                        <input type="text" name="hoTen" id="hoTen" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dienThoai">Số điện thoại <span>(*)</span></label>
+                        <br>
+                        <input type="tel" name="dienThoai" id="dienThoai" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email <span>(*)</span></label>
+                        <br>
+                        <input type="email" name="email" id="email" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Chọn khóa học <span>(*)</span></label>
+                        <br>
+                        <select name="chonKH" id="chonKH">
+                            <option value="">Chọn khóa học</option>
+                            <option value="1">Khóa học Frontend</option>
+                            <option value="2">Khóa học Frontend-ReactJS</option>
+                            <option value="3">Khóa học FullStack PHP Laravel</option>
+                            <option value="4">Khóa học FullStack AspNetCore</option>
+                            <option value="4">Khóa học FullStack Java SpringBoot</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ghiChu">Ghi chú</label>
+                        <br>
+                        <textarea name="ghiChu" id="ghiChu" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Đăng ký">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Chọn khóa học <span>(*)</span></label>
+                        <br>
+                        <select name="chonKH" id="chonKH">
+                            <optgroup label="Nhóm 1">
+                                <option value="">Chọn khóa học</option>
+                                <option value="1">Khóa học Frontend</option>
+                                <option value="2">Khóa học Frontend-ReactJS</option>
+                                <option value="3">Khóa học FullStack PHP Laravel</option>
+                            </optgroup>
+                           <optgroup label="Nhóm 2">
+                            <option value="4">Khóa học FullStack AspNetCore</option>
+                            <option value="4">Khóa học FullStack Java SpringBoot</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select  name="cars" id="cars">
+                            <optgroup label="Swedish Cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="German Cars">
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </optgroup>
+                          </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
