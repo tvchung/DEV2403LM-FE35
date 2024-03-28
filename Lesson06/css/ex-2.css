@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+}
+nav{
+    background-color: #484848;
+    /* margin-left: 100px; */
+    /* width: 150px; */
+}
+nav ul{
+    list-style: none;
+    /* padding-left: 1rem; */
+}
+nav ul a{
+    display: block;
+    padding: .5rem 0 .5rem 1rem;
+    text-decoration: none;
+    color: yellow;
+    border-bottom: 1px solid #fff;
+}
+nav a:hover{
+    background-color: #ccc;
+    color: blue;
+}

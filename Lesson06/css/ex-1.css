@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+}
+nav{
+    background-color: #484848;
+    margin: 1rem 10%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul a{
+    color: yellow;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+nav ul li:last-child a{
+    border: 0;
+}
+/* khi hover đến menu  */
+nav a:hover {
+    background-color: #ccc;
+    color: blue;
+}
