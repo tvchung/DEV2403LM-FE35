@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transtion / transform / translate</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #zone1 div{
+            border: 10px solid green;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            width: 100%;
+            transition:  all 3s;
+        }
+        div:hover img {
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+        #zone1 p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 1.5;
+            transform: translate(-50%,-50%);
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Transtion / transform / translate</h1>
+        <pre>
+            search ví dụ -> demo
+
+        </pre>
+    </section>
+    <section id="zone1">
+        <div>
+            <img src="images/php.jpg" alt="PHP">
+            <p>
+                <a href="">xem chi tiết</a>
+            </p>
+        </div>
+    </section>
+</body>
+</html>

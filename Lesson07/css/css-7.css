@@ -1,0 +1,85 @@
+/* 
+// `xs` returns only a ruleset and no media query
+// ... { ... } */
+body{
+    background-color: aqua;
+}
+
+.container{
+    margin: 1rem auto;
+    width: 1400px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col{
+    width: 20%;
+}
+#zone1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.item{
+    margin: .5rem;
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    body{
+        background-color: orange;
+    }
+    .container{
+        margin: 1rem auto;
+        width: 100%;
+    }
+    .col{
+        width: 25%;
+    }
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    body{
+        background-color: purple;
+    }
+    .col{
+        width: 25%;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    body{
+        background-color: yellow;
+    }
+    .col{
+        width: 33.333333%;
+    }
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    body{
+        background-color: blue;
+    }
+    .col{
+        width: 50%;
+    }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    body{
+        background-color: red;
+    }
+    .col{
+        width: 50%;
+    }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 420.98px) { 
+    body{
+        background-color: red;
+    }
+    .col{
+        width: 100%;
+    }
+}

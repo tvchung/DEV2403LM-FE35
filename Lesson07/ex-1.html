@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            border: 3px solid red;
+            width: 10rem;
+            height: 10rem;
+            margin: .5rem;
+        }
+        @keyframes div1 {
+            from{ background-color: red;}
+            to{background-color: yellow;}
+        }
+        div{
+            background-color: blue;
+            animation-name: div1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <section id="zone1">
+        <h1>Animation</h1>
+    </section>
+    <hr/>
+    <section id="zone2">
+        <div>1</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,5 @@
+- làm việc với một thuộc tính trong css3
+    + animation
+    + transition / transform / translate ...
+- tích hợp font
+- responsive
