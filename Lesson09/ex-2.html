@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng các hàm hệ thống (Trình duyệt)</title>
+</head>
+<body>
+    <div>
+        <h1>Sử dụng các hàm hệ thống (Trình duyệt)</h1>
+    </div>
+
+
+    <!-- mã lệnh js  -->
+    <script>
+        // Hàm alert -> Hộp thoại thông báo của trình duyệt 
+        alert("Đây là một thông báo từ hàm alert");
+
+        // hàm confirm -> hộp thoại hỏi/ đáp
+        if(confirm('Bạn có đồng ý không')){
+            // có
+            alert('Bạn vừa chọn đồng ý');
+        }else{
+            // không
+            alert('Bạn vừa chọn không đồng ý');
+        }
+
+        // hàm prompt -> hộp thoại cho phép nhập dữ liệu
+
+        var x = prompt('Nhập một giá trị:');
+        document.write("<h1>" + x + "</h1");
+
+    </script>
+</body>
+</html>
