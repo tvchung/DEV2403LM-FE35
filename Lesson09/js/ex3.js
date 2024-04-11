@@ -120,3 +120,13 @@ switch(thu){
         default:
             console.log("Bạn nhập sai");
 }
+
+// Bài tập:
+/*
+    Nhập vào tháng, năm
+    => In ra số ngày trong tháng năm đó
+    ví dụ:
+    thang=4, nam=2024
+    => Tháng 4 năm 2024 có 30 ngày!
+    
+*/

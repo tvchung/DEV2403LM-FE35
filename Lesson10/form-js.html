@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý dữ liệu trên form với javascript</title>
+</head>
+<body>
+    <form name="frm" action="" method="post">
+        <div>
+            <label for="num">Nhập số</label>
+            <input type="number" name="num" id="num">
+        </div>
+        <button onclick="return fnTinh(); ">Tính</button>
+        <input type="text" name="kq" id="kq" readonly>
+    </form>
+
+    <script>
+        const fnTinh = () =>{
+            // lấy giá trị trên form
+            let gtri = frm.num.values;
+
+             if(gtri==""){
+                alert("Bạn chưa nhập giá trị");
+                return false;
+             }
+
+            console.log(gtri=="");
+            kq="";
+            for (let i = 0; i < gtri; i++) {
+               kq += i +", ";
+            }
+            
+            // In kết QUẢ
+            frm.kq.value=kq;
+
+            return false;
+        }
+    </script>
+</body>
+</html>
