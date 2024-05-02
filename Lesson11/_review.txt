@@ -1,0 +1,31 @@
+Ngôn ngữ lập trình javascript
+- Biến, kiểu dữ liệu, hằng, toán tử, toán hạng, biểu thức, câu lệnh, khối lệnh, ...
+- I/O:
+    + console
+    + form
+- Hàm hệ thống: alert / confirm / prompt
+- Các cấu trúc điều khiển: (3 loại)
+    + Lựa chọn / rẽ nhánh
+        ++ if => 4 dạng
+
+        ++ switch
+    + Lặp  (loop)
+        ++ for: (4 dạng for)
+        ++ while
+        ++ do...while
+        ++ foreach
+    + Lệnh nhảy:
+        continue;
+        break;
+        return;
+        ...
+- Mảng
+    ++ mảng 1 chiều
+    ++ mảng nhiều chiều
+- Hàm 
+    ++ hàm có tham số / không có tham số
+    ++ hàm có giá trị trả xác định / không xác định
+
+
+
+    frm.tendieukhien.value

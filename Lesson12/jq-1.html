@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tải jquery từ trang chủ về server của ứng dụng để dùng</title>
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1>Tải jquery từ trang chủ về server của ứng dụng để dùng</h1>
+        <pre>
+            https://jquery.com 
+        </pre>
+    </header>
+    <section>
+        <h2>Test Jquery</h2>
+        <button>Click here</button>
+    </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Các câu lệnh xử lý có sử dụng jquery
+            console.log("Jquery Ready....");
+
+            // Tương tác với nút button (sự kiện click)
+            $("button").click(function(){
+                console.log("Click button");
+                alert("Button click....");
+            })
+        });
+    </script>
+
+</body>
+</html>

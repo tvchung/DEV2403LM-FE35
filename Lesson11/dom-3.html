@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Form</title>
+    <style>
+        .error {
+            color: red;
+            font-size: .8rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Check Form</h1>
+        <pre>
+            - Kiểm tra khi người dùng chưa nhập đữ liệu thì hiển thị thông báo
+        </pre>
+    </header>
+    <section id="zone1">
+        <form action="" method="post">
+            <div>
+                <label for="user">UserName</label>
+                <div>
+                    <input type="text" name="user" id="user">
+                    <span id="errUser" class="error">(*)</span>
+                </div>
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <div>
+                    <input type="text" name="pass" id="pass">
+                    <span id="errPass" class="error">(*)</span>
+                </div>
+            </div>
+            <button onclick="return checkLogin();">Login</button>
+        </form>
+    </section>
+
+    <script>
+        const checkLogin = ()=>{
+            let err = []; // lưu trữ lỗi
+            if(user.value.trim()==""){
+                errUser.innerText = "Bạn chưa nhập user";
+                // err.push("Bạn chưa nhập user");
+                err[0]="Bạn chưa nhập user";
+            }else{
+                errUser.innerText = "OK";
+                err.splice(0,1);
+            }
+            if(pass.value.trim()==""){
+                errPass.innerHTML = "<span style='color:blue'>Bạn chưa nhập mật khẩu </span>";
+                // err.push("Bạn chưa nhập user");
+                err[1]="Bạn chưa nhập mật khẩu";
+            }else{
+                errPass.innerText = "OK";
+                err.splice(1,1);
+            }
+
+            console.log(err);
+            return false;
+        }
+
+        // const fn_KeyUp = ()=>{
+
+        // }
+        /*
+            sử dụng dom
+            -  thiết form cho phép nhập 2 số (Kiểm tra dữ liệu đúng đắng)
+            - chọn phép tính (số học: , / , + , -, %)
+            -> thực hiện tính toán số học giữa 2 số
+        */
+    </script>
+</body>
+</html>

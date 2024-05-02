@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery tương tác với các thành phần trên html</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jquery tương tác với các thành phần trên html</h1>
+      <p>p trong header</p>
+    </header>
+    <section id="zone1">
+      <h2>Test jquery tương tác thông qua Id</h2>
+      <p>Khi hover đến vùng này thì tô màu nền cho vùng bằng jquery</p>
+    </section>
+    <section>
+      <h2>Tag html</h2>
+      <button class="btn">Class Name</button>
+      <div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sint
+          inventore similique explicabo quas, voluptates ipsam praesentium
+          reiciendis quibusdam alias exercitationem deserunt voluptatem quia.
+          Quisquam ea veritatis nemo officia modi!
+        </p>
+      </div>
+    </section>
+
+    <!-- Nhúng thư viện jquery thừ cloud  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Mã lệnh xử lý js với jquery  -->
+    <script>
+      $(document).ready(function () {
+        // Tương tác: id
+        $("#zone1").hover(function () {
+          // $(this).css("background-color","#ccc");
+          // $(this).css("cursor","pointer");
+          $(this).css({
+            "background-color": "red",
+            cursor: "pointer",
+          });
+        });
+        // tương tác: html tag -> ví dụ: h2
+        $("h2").hover(function () {
+          $(this).css("color", "Blue").css("font-size", "4rem");
+        });
+        $("h2").mouseout(function () {
+          $(this).css("color", "black").css("font-size", "2rem");
+        });
+        // Tương tác: class -> ví dụ: btn
+        $(".btn").click(function () {
+          alert($(this).text());
+        });
+        // Tương tác: css selector -> ví dụ: section p
+        $("section p").click(function(){
+            console.log("click here");
+            $(this).css("background-color","green");
+        })
+      });
+    </script>
+  </body>
+</html>

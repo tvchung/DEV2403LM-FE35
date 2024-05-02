@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng thư viên Jquery trực tiếp trên cloud</title>
+</head>
+<body>
+    <header>
+        <h1>Sử dụng thư viên Jquery trực tiếp trên cloud</h1>
+        <pre>
+
+        </pre>
+    </header>
+    <section>
+        <h2>Test jquery</h2>
+        <a href="#">Click here</a>
+    </section>
+
+    <!-- Nhúng thư viện jquery thừ cloud  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Mã lệnh xử lý js với jquery  -->
+    <script>
+        $(document).ready(function(){
+            // jquery ready
+            $("a").click(function(){
+                alert($(this));
+                console.log($(this).text());
+                $(this).text("Ok bạn vừa click");
+            })
+        });
+    </script>
+
+</body>
+</html>

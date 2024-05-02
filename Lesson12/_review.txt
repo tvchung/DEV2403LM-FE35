@@ -1,0 +1,13 @@
+DOM - Javascript
+- id: document.getElementById("<<giá trị của thuộc tính id>>")
+- tag: document.getElementsByTagName("<<Tên thẻ>>")
+- class: document.getElementsByClassName("<<giá trị của thuộc tính class>>")
+- css selector: document.querySelectorAll("<<css selector>>")
+
+-- Form:
+    ++ value
+-- tag html:
+    ++ innerText
+    ++ innerHTML
+- Node
+- NodeList

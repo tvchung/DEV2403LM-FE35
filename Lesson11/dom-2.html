@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENT</title>
+</head>
+<body>
+    <header>
+        <h1 onmouseover="this.style.color='red'"
+            onmouseout="this.style.color=''">
+            DOM EVENT</h1>
+    </header>
+
+    <section id="zone1">
+        <div>
+            <label for="txt1">Text1</label>
+            <input type="text" name="txt1" id="txt1"
+                onmouseenter="this.style.backgroundColor='yellow'"
+                onmouseleave="this.style.backgroundColor=''"
+
+                onchange="fn_Change(this);"
+            >
+        </div>
+        <div>
+            <label for="txt2">Text2</label>
+            <input type="text" name="txt2" id="txt2"
+                onfocus="this.style.backgroundColor='yellow'"
+                onblur="this.style.backgroundColor=''"
+                onchange="fn_Change(this);"
+                onkeydown="fn_KeyDown(this)"
+                onkeypress="fn_KeyPress(this)"
+                onkeyup="fn_KeyUp(this)"
+            >
+        </div>
+    </section>
+
+
+    <script>
+        const fn_Change = (param)=>{
+            // console.log(param);
+            let val = param.value;
+            console.log(val);
+        }
+        const fn_KeyDown = (param)=>{
+            console.log(param.value);
+        }
+        const fn_KeyPress = (param)=>{
+            console.log("Keypreess",param.value);
+        }
+        const fn_KeyUp = (param)=>{
+            console.log("keyup",param.value);
+        }
+    </script>
+
+</body>
+</html>

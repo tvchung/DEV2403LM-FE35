@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các sử kiện thông dụng trong jquery</title>
+</head>
+<body>
+    <h1>Các sử kiện thông dụng trong jquery</h1>
+    <div>
+        <form action="" method="post">
+            <p>
+                UserName:
+                <input type="text" name="user" id="user">
+                <span>(*)</span>
+            </p>
+            <p>
+                Password:
+                <input type="password" name="pass" id="pass">
+                <span>(*)</span>
+            </p>
+            <button>Submit</button>
+        </form>
+    </div>
+
+
+
+     <!-- Nhúng thư viện jquery thừ cloud  -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            //  form
+            $("input").focus(function(){
+                $(this).css("background-color","yellow");
+            }).blur(function(){
+                $(this).css("background-color","");
+            });
+
+            // khi submit 
+
+            $("form").submit(function(){
+                alert("Sumit")
+            });
+
+            //
+            $("button").click(function(){
+                // lấy giá trị trên form
+                let user = $("#user").val();
+                let pass = $("#pass").val();
+                if(user == ""){
+                    $("#user + span").text("Chưa nhập user")
+                                        .css("color","red");
+                }else{
+                    $("#user + span").text("OK")
+                                    .css("color","green");
+                }
+                if(pass == ""){
+                    $("#pass + span").html("<i> Chưa nhập pass </i>")
+                                    .css("color","red")
+                }else{
+                    $("#pass + span").html("<i> OK </i>")
+                                    .css("color","green")
+                }
+
+                return false;
+            })
+
+            // change, keyup, 
+            $("input").keyup(function(){
+                let giaTri = $(this).val();
+                let id = $(this).attr("id");
+                console.log(giaTri,id);
+                if(giaTri == ""){
+                    $("#" + id + " + span").text("bạn chua nhap du lieu");
+                }else{
+                    $("#" + id + " + span").text("OK");
+                }
+            });
+
+            $("input").change(function(){
+                alert($(this).val());
+            })
+        });
+     </script>
+</body>
+</html>

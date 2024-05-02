@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-body-tertiary{
+    background-color: #78b43d !important;
+}
+nav a{
+    color: #fff !important;
+}
+.dropdown-menu{
+    background-color: #78b43d !important;
+    border-radius: 0;
+}
+.dropdown-menu li:hover{
+    background-color: #0d6efd !important;
+}
+.card {
+     margin: .5rem !important;
+     /* width: auto !important; */
+}
